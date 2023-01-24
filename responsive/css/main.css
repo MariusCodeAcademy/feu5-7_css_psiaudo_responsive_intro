@@ -23,12 +23,32 @@ footer {
   padding: 1rem;
 }
 
+header::after {
+  content: ' --- Laptop';
+}
+
 /* media queries */
+
+/* max-width - 0 iki kiek nurodyda */
+/* min-width - nuo kiek nurodyta iki maximalio arba kitos taisykles */
+@media screen and (min-width: 2000px) {
+  /* min-width - nuo kiek nurodyta 2000px */
+
+  .container {
+    max-width: 100rem;
+  }
+  header::after {
+    content: ' --- 4k Screen';
+  }
+}
 
 @media screen and (max-width: 768px) {
   /* cia parasyto taisykles galios 0 iki 768px */
   main {
     min-width: 50%;
+  }
+  header::after {
+    content: ' --- Tablet';
   }
 }
 
@@ -38,5 +58,11 @@ footer {
   }
   .flex {
     flex-wrap: wrap;
+  }
+  .element {
+    font-size: 3rem;
+  }
+  header::after {
+    content: ' --- Mobile';
   }
 }
