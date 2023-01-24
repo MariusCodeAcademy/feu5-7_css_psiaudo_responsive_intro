@@ -1,0 +1,59 @@
+/* list */
+
+.list li {
+  margin-bottom: 2rem;
+}
+.list li:last-child {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.list li:first-child {
+  background-color: tomato;
+  color: white;
+  padding: 0.2em 0.4em;
+}
+.list li:first-child::marker {
+  background-color: tomato;
+  color: white;
+}
+
+/* Stuff */
+
+.stuff h2:nth-child(2) {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.stuff p:nth-of-type(2) {
+  background-color: coral;
+}
+
+.stuffed-link:nth-of-type(2) {
+  /* font-size: 2rem; */
+}
+
+/* Psiaudo elements */
+
+h1:after {
+  content: ' - This is our main title';
+  color: coral;
+  font-size: 1rem;
+  /* position: absolute; */
+}
+
+h1::before {
+  content: '\f230      ';
+  font-family: FontAwesome;
+  font-size: 20rem;
+}
+
+.stuffed-link::after {
+  content: ' | -- | ';
+  margin-right: 1rem;
+}
+.stuffed-link:last-of-type::after {
+  /* margin-right: 0; */
+  /* nuimti paskutiniam elementui skirtuka esanti afteryje */
+  content: none;
+}
