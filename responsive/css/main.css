@@ -4,10 +4,13 @@ header {
 
 main {
   background-color: coral;
+  min-width: 70%;
 }
 
 aside {
   background-color: aquamarine;
+  /* min-width: 40%; */
+  flex-grow: 1;
 }
 
 footer {
@@ -17,4 +20,5 @@ footer {
 .element {
   min-height: 150px;
   font-size: 5rem;
+  padding: 1rem;
 }
