@@ -22,3 +22,21 @@ footer {
   font-size: 5rem;
   padding: 1rem;
 }
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  /* cia parasyto taisykles galios 0 iki 768px */
+  main {
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    min-width: 100%;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+}
