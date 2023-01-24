@@ -1,0 +1,21 @@
+body {
+  background-color: #f3f3f3;
+}
+/* header */
+h1 {
+  color: #4d4d4d;
+  font-size: 4rem;
+}
+
+.white-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.nav-link {
+  font-size: 1.9rem;
+  padding: 0.5em 1em;
+  display: inline-block;
+}
